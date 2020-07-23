@@ -1,0 +1,152 @@
+.category-container{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;// for the story
+}
+
+
+.back-icon{
+    background-image: url(../img/left-arrow.svg);
+    width: 3.5rem;
+    height: 3.4rem;
+    background-color: white;
+    margin-left: .5rem;
+    border-radius: 5px;
+    display: flex;
+    transition: .2s;
+    fill:#000;
+
+    &--story{
+        background-color: $color-background;
+    }
+
+    &:hover{
+        background-color: $color-topbar;
+        fill: #fff;
+    }
+
+}
+
+.category-name{
+    font-size: 2rem;
+    padding-right: 5rem;
+}
+
+.book-list{
+    margin-top: .2rem;
+    list-style: none;
+    border-top: $border-top;
+    transition: .2s;
+    
+}
+
+.book{
+
+    &__description{
+        text-decoration: none;
+        color: $color-black;
+        display: flex;
+        flex-direction: column;
+        border-bottom: $border-bottom;
+        padding-left: 2rem;
+        line-height: 1.5;
+    
+
+    }
+
+    &__title{
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+    &__author{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}
+
+
+
+
+
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: $color-black;
+
+    
+}
+
+.arrow-prev,
+.arrow-next{
+    font-size: 3rem;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 1rem;
+    transition: .2s;
+
+    &:hover{
+        background-color: $color-topbar;
+        color: white;
+        
+    }
+}
+
+.page-prev,
+.page-next{
+    display: flex;
+    align-items: center;
+    margin: 1rem; 
+}
+
+
+.popup{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 2s;
+
+    &__heading{
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    &__message{
+        font-size: 1.5rem;
+    }
+
+
+    &__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    background-color: #eee;
+    border-radius: 5px;
+    width: 85%;
+    padding: 1rem;
+    }
+
+    &__close{
+        color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        bottom: .4rem;
+        right: 1rem;
+        font-size: 4rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+        line-height: 1;
+        cursor: pointer;
+    }
+    &__close:hover{
+        color: #000;
+    }
+}

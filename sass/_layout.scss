@@ -1,0 +1,107 @@
+.container{
+    margin: 0 auto;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.topbar{
+    background-color: $color-topbar;
+    height: 4.5rem;
+    color: $color-black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+
+    a{
+        text-decoration: none;
+    }
+.logo-topbar{
+    height: 4rem;
+    width: 4rem;
+}
+
+
+}
+.page-name{
+    font-size: 2.2rem;
+    display: block;
+    margin: auto;
+    padding-right: 5rem;
+}
+
+.categories{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+
+.category{
+    position: relative;
+    transition: .2s;
+    ///Giving some space in mobile devices since grid isn't working
+    margin-bottom: 4px;
+    
+    &:hover{
+        filter:brightness(75%);
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    &__title{
+        font-size: 1.3rem;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        background: $link-background;
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: .6rem;
+        //for the number
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span{
+            display: flex;
+        }
+
+        &--number{
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #e77f67;
+        }
+    }
+
+}
+
+
+
+.folder-icon{
+    padding-right: .6rem;
+    //This centers the icon
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.footer{
+    font-size: 1.3rem;
+    text-align: center;
+    border-top: $border-top;
+    display: block;
+    margin: .2rem auto 1rem;
+}
+
+

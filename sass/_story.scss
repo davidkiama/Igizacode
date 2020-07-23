@@ -1,0 +1,41 @@
+
+
+.story{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    z-index: 500;
+    display: none;
+    transition: all .3s;
+    background-color: $color-background;
+    padding: .5rem;
+
+    &__title{
+        font-size: 1.6rem;
+    }
+    &__story{
+        padding-top: 3px;
+        & ~ p{
+            font-size: 1.5rem;
+            padding-left:  5px;
+        }
+    }
+    &__credits{
+        font-style: italic;
+        text-decoration: none;
+        color: $color-black;
+        font-size: 1.5rem;
+        padding: 5px;
+        float: right;
+    }
+
+    
+    
+}
+.story:target{
+    display: block;
+}
+
+
